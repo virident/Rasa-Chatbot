@@ -1,0 +1,10 @@
+[
+  {
+    "text": "I'm going to take a camping trip next week",
+    "intent": "schedule an event",
+    "intent_prediction": {
+      "name": "remove an event",
+      "confidence": 0.6695083975791931
+    }
+  }
+]

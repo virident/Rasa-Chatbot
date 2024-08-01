@@ -1,0 +1,122 @@
+version: "3.1"
+
+entities:
+  - location
+  - month
+  - month_lookup
+  - event_name_ent
+  - days_of_week
+  - time
+  - event_month
+  - event_time
+  - event_day
+  - event_year
+  - event_location
+  - tier_time_ent
+  - DATE
+  - TIME
+
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - schedule an event
+  - remove an event
+  - modify an event
+  - ask about upcoming events
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+
+  # utter_confirmation:
+  # - text: "Done"
+  # - text: "Got it"
+
+  # utter_negative_response:
+  # - text: "No"
+
+  utter_positive_response:
+    - text: "Yes"
+
+slots:
+  event_name_ent:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: event_name_ent
+    initial_value: ""
+    
+  event_month:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: event_month
+    initial_value: 0.0
+    
+  event_day:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: event_day
+    initial_value: 0.0
+    
+  event_year:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: event_year
+    initial_value: 0.0
+    
+  event_time:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: event_time
+    initial_value: ""
+    
+  event_location:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: event_location
+    initial_value: ""
+    
+
+# forms:
+#   event_lookup_form:
+#     required_slots:
+#       - event_month
+
+
+actions: 
+  - ActionReturnEvent
+  - TestEvent
+  - ActionInsertEvent
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,10 @@
+version: "3.1"
+stories:
+- story: retrieve event name month (.\tests\test_stories.yml)
+  steps:
+  - intent: ask about upcoming events  # predicted: ask about upcoming events: What do I have to do in [July][{"entity": "event_month"}, {"entity": "event_month"}, {"entity": "event_month"}]
+  - action: ActionReturnEvent
+- story: retrieve event name year (.\tests\test_stories.yml)
+  steps:
+  - intent: ask about upcoming events  # predicted: ask about upcoming events: What do I have to do in [2024][{"entity": "event_year"}, {"entity": "event_year"}, {"entity": "event_year"}]
+  - action: ActionReturnEvent

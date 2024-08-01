@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-days_of_week",
+      "2": "I-days_of_week",
+      "3": "L-days_of_week",
+      "4": "U-days_of_week",
+      "5": "B-event_name_ent",
+      "6": "I-event_name_ent",
+      "7": "L-event_name_ent",
+      "8": "U-event_name_ent",
+      "9": "B-month_lookup",
+      "10": "I-month_lookup",
+      "11": "L-month_lookup",
+      "12": "U-month_lookup",
+      "13": "B-time",
+      "14": "I-time",
+      "15": "L-time",
+      "16": "U-time",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-days_of_week": 1,
+      "I-days_of_week": 2,
+      "L-days_of_week": 3,
+      "U-days_of_week": 4,
+      "B-event_name_ent": 5,
+      "I-event_name_ent": 6,
+      "L-event_name_ent": 7,
+      "U-event_name_ent": 8,
+      "B-month_lookup": 9,
+      "I-month_lookup": 10,
+      "L-month_lookup": 11,
+      "U-month_lookup": 12,
+      "B-time": 13,
+      "I-time": 14,
+      "L-time": 15,
+      "U-time": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

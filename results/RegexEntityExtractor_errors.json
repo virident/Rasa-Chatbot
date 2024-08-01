@@ -1,0 +1,638 @@
+[
+  {
+    "text": "add a fishing trip to July 15",
+    "entities": [
+      {
+        "start": 6,
+        "end": 18,
+        "value": "fishing trip",
+        "entity": "event_name_ent"
+      },
+      {
+        "start": 22,
+        "end": 26,
+        "value": "July",
+        "entity": "event_month"
+      },
+      {
+        "start": 27,
+        "end": 29,
+        "value": "15",
+        "entity": "event_day"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "event_month",
+        "start": 22,
+        "end": 26,
+        "value": "July",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_name_ent",
+        "start": 6,
+        "end": 18,
+        "confidence_entity": 0.8306039541798399,
+        "value": "fishing trip",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_month",
+        "start": 22,
+        "end": 26,
+        "confidence_entity": 0.8731112932621975,
+        "value": "July",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_day",
+        "start": 27,
+        "end": 29,
+        "confidence_entity": 0.8376288690202582,
+        "value": "15",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_name_ent",
+        "start": 6,
+        "end": 18,
+        "confidence_entity": 0.7012602686882019,
+        "value": "fishing trip",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_month",
+        "start": 22,
+        "end": 26,
+        "confidence_entity": 0.9958827495574951,
+        "value": "July",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_day",
+        "start": 27,
+        "end": 29,
+        "confidence_entity": 0.7967963218688965,
+        "value": "15",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I'm going to take a camping trip next week",
+    "entities": [
+      {
+        "start": 20,
+        "end": 32,
+        "value": "camping trip",
+        "entity": "event_name_ent"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "event_name_ent",
+        "start": 20,
+        "end": 32,
+        "confidence_entity": 0.8552744045170658,
+        "value": "camping trip",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_name_ent",
+        "start": 20,
+        "end": 32,
+        "confidence_entity": 0.6216418743133545,
+        "value": "camping trip",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "My cousins birthday is January 30",
+    "entities": [
+      {
+        "start": 3,
+        "end": 19,
+        "value": "cousins birthday",
+        "entity": "event_name_ent"
+      },
+      {
+        "start": 23,
+        "end": 30,
+        "value": "January",
+        "entity": "event_month"
+      },
+      {
+        "start": 31,
+        "end": 33,
+        "value": "30",
+        "entity": "event_day"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "event_month",
+        "start": 23,
+        "end": 30,
+        "value": "January",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_name_ent",
+        "start": 3,
+        "end": 19,
+        "confidence_entity": 0.8297325484762049,
+        "value": "cousins birthday",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_month",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.8733292812673097,
+        "value": "January",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_day",
+        "start": 31,
+        "end": 33,
+        "confidence_entity": 0.8348219118121972,
+        "value": "30",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_name_ent",
+        "start": 3,
+        "end": 19,
+        "confidence_entity": 0.9918000102043152,
+        "value": "cousins birthday",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_month",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.9962563514709473,
+        "value": "January",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_day",
+        "start": 31,
+        "end": 33,
+        "confidence_entity": 0.855832576751709,
+        "value": "30",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Create a reminder to go to the dentist in 5 days",
+    "entities": [
+      {
+        "start": 21,
+        "end": 38,
+        "value": "go to the dentist",
+        "entity": "event_name_ent"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "event_name_ent",
+        "start": 21,
+        "end": 38,
+        "confidence_entity": 0.66146079250607,
+        "value": "go to the dentist",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_name_ent",
+        "start": 31,
+        "end": 38,
+        "confidence_entity": 0.9905422329902649,
+        "value": "dentist",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Create a timeslot tomorrow for lunch with Paul at 12:30",
+    "entities": [
+      {
+        "start": 31,
+        "end": 46,
+        "value": "lunch with Paul",
+        "entity": "event_name_ent"
+      },
+      {
+        "start": 50,
+        "end": 55,
+        "value": "12:30",
+        "entity": "event_time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "event_time",
+        "start": 50,
+        "end": 55,
+        "value": "12:30",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_name_ent",
+        "start": 31,
+        "end": 46,
+        "confidence_entity": 0.8184501737246992,
+        "value": "lunch with Paul",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_time",
+        "start": 50,
+        "end": 55,
+        "confidence_entity": 0.8118755127393157,
+        "value": "12:30",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_name_ent",
+        "start": 31,
+        "end": 46,
+        "confidence_entity": 0.9827582240104675,
+        "value": "lunch with Paul",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "time",
+        "start": 50,
+        "end": 55,
+        "confidence_entity": 0.677964985370636,
+        "value": "12:30",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Remind me to go buy a watermelon tomorrow",
+    "entities": [
+      {
+        "start": 16,
+        "end": 32,
+        "value": "buy a watermelon",
+        "entity": "event_name_ent"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "event_name_ent",
+        "start": 16,
+        "end": 32,
+        "confidence_entity": 0.8050234038034763,
+        "value": "buy a watermelon",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_name_ent",
+        "start": 16,
+        "end": 19,
+        "confidence_entity": 0.9814661741256714,
+        "value": "buy",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "event_name_ent",
+        "start": 22,
+        "end": 32,
+        "confidence_entity": 0.9855493903160095,
+        "value": "watermelon",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have a counseling appointment next Tuesday, can you add that in?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 31,
+        "value": "counseling appointment",
+        "entity": "event_name_ent"
+      },
+      {
+        "start": 37,
+        "end": 44,
+        "value": "Tuesday",
+        "entity": "days_of_week"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "days_of_week",
+        "start": 37,
+        "end": 44,
+        "value": "Tuesday",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_name_ent",
+        "start": 9,
+        "end": 31,
+        "confidence_entity": 0.8425089745734007,
+        "value": "counseling appointment",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "days_of_week",
+        "start": 37,
+        "end": 44,
+        "confidence_entity": 0.8610645676533859,
+        "value": "Tuesday",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_name_ent",
+        "start": 9,
+        "end": 31,
+        "confidence_entity": 0.9939272403717041,
+        "value": "counseling appointment",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "days_of_week",
+        "start": 37,
+        "end": 44,
+        "confidence_entity": 0.9900985360145569,
+        "value": "Tuesday",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can you remove my 3:00 meeting tomorrow?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 22,
+        "value": "3:00",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "event_time",
+        "start": 18,
+        "end": 22,
+        "value": "3:00",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "time",
+        "start": 18,
+        "end": 22,
+        "confidence_entity": 0.92234906437687,
+        "value": "3:00",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "time",
+        "start": 18,
+        "end": 22,
+        "confidence_entity": 0.7778498530387878,
+        "value": "3:00",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can you switch my 4:00 and 3:00 meetings?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 22,
+        "value": "4:00",
+        "entity": "time"
+      },
+      {
+        "start": 27,
+        "end": 31,
+        "value": "3:00",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "event_time",
+        "start": 18,
+        "end": 22,
+        "value": "4:00",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_time",
+        "start": 27,
+        "end": 31,
+        "value": "3:00",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "time",
+        "start": 18,
+        "end": 22,
+        "confidence_entity": 0.8496750589972304,
+        "value": "4:00",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "time",
+        "start": 27,
+        "end": 31,
+        "confidence_entity": 0.8717054395928082,
+        "value": "3:00",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "time",
+        "start": 18,
+        "end": 22,
+        "confidence_entity": 0.7827805280685425,
+        "value": "4:00",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "time",
+        "start": 27,
+        "end": 31,
+        "confidence_entity": 0.7592666745185852,
+        "value": "3:00",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Change Friday's hiking trip into a swim",
+    "entities": [
+      {
+        "start": 7,
+        "end": 15,
+        "value": "Friday's",
+        "entity": "days_of_week"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "days_of_week",
+        "start": 7,
+        "end": 13,
+        "value": "friday",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "days_of_week",
+        "start": 7,
+        "end": 15,
+        "confidence_entity": 0.7635556962156886,
+        "value": "Friday's",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "days_of_week",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.48272785544395447,
+        "value": "friday",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "event_name_ent",
+        "start": 23,
+        "end": 27,
+        "confidence_entity": 0.5984240174293518,
+        "value": "trip",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

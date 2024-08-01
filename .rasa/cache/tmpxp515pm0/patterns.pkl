@@ -1,0 +1,14 @@
+[
+  {
+    "name": "time",
+    "pattern": "\\d{1,2}:\\d{1,2}"
+  },
+  {
+    "name": "month",
+    "pattern": "(\\bJanuary\\b|\\bFebruary\\b|\\bMarch\\b|\\bApril\\b|\\bMay\\b|\\bJune\\b|\\bJuly\\b|\\bAugust\\b|\\bSeptember\\b|\\bOctober\\b|\\bNovember\\b|\\bDecember\\b)"
+  },
+  {
+    "name": "days_of_week",
+    "pattern": "(\\bSunday\\b|\\bMonday\\b|\\bTuesday\\b|\\bWednesday\\b|\\bThursday\\b|\\bFriday\\b|\\bSaturday\\b)"
+  }
+]

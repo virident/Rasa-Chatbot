@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-days_of_week",
+      "2": "I-days_of_week",
+      "3": "L-days_of_week",
+      "4": "U-days_of_week",
+      "5": "B-event_name_ent",
+      "6": "I-event_name_ent",
+      "7": "L-event_name_ent",
+      "8": "U-event_name_ent",
+      "9": "B-time",
+      "10": "I-time",
+      "11": "L-time",
+      "12": "U-time",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-days_of_week": 1,
+      "I-days_of_week": 2,
+      "L-days_of_week": 3,
+      "U-days_of_week": 4,
+      "B-event_name_ent": 5,
+      "I-event_name_ent": 6,
+      "L-event_name_ent": 7,
+      "U-event_name_ent": 8,
+      "B-time": 9,
+      "I-time": 10,
+      "L-time": 11,
+      "U-time": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

@@ -1,0 +1,26 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+
+- story: retrieve event name month
+  steps:
+  - user: |
+      What do I have to do in July
+    intent: ask about upcoming events
+  - action: ActionReturnEvent
+
+- story: retrieve event name year
+  steps:
+  - user: |
+      What do I have to do in 2024
+    intent: ask about upcoming events
+  - action: ActionReturnEvent
+
+
+- story: retrieve event name day
+  steps:
+  - user: |
+      What do I have to do on 11
+    intent: ask about upcoming events
+  - action: ActionReturnEvent

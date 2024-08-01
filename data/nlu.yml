@@ -1,0 +1,173 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: schedule an event
+  examples: |
+    - can you add this to my calendar
+    - add a [fishing trip](event_name_ent) to [July](event_month) [15](event_day)
+    - I'm going to take a [camping trip](event_name_ent) next week
+    - My [cousins birthday](event_name_ent) is [January](event_month) [30](event_day)
+    - Create a reminder to [go to the dentist](event_name_ent) in 5 days
+    - I have a meeting today at [3:45](event_time)
+    - Create a timeslot tomorrow for [lunch with Paul](event_name_ent) at [12:30](event_time)
+    - Remind me to go [buy a watermelon](event_name_ent) tomorrow
+    - I have a [counseling appointment](event_name_ent) next [Tuesday](days_of_week), can you add that in?
+
+- intent: remove an event
+  examples: |
+    - Can you remove my [3:00](time) meeting tomorrow?
+    - Delete my plans for next weekend
+    - Cancel tomorrows agenda
+    - I'm no longer able to make it to the hiking trip tomorrow
+    - It looks like I won't be able to go to John's wedding next month
+
+- intent: modify an event
+  examples: |
+    - Can you switch my [4:00](time) and [3:00](time) meetings?
+    - Postpone my break by an hour
+    - Move the event tomorrow to my nearest free day
+    - Cancel my plans for tomorrow and move them to the day after tomorrow
+    - Change [Friday's](days_of_week) hiking trip into a swim 
+
+
+- intent: ask about upcoming events
+  examples: |
+    - Do I have anything going on tomorrow?
+    - Is there something scheduled for [Tuesday](days_of_week)?
+    - Am I free next weekend?
+    - Busy this [friday](days_of_week)?
+    - What do I have to do today?
+    - Are there any important tasks I have to do next month?
+    - How many things do I have to do tomorrow?
+    - Do I have plans in [March](event_month)?
+    - What do I have to do on the 11
+    - Am I busy in [April](event_month)?
+    - Do I have anything to do in [2026](event_year)
+    - What major events do I have in [2024](event_year)?
+    - Am I busy next week?
+    - Am I free next month?
+    - Do I have anything this Friday?
+    - Am I available next Monday?
+
+
+- lookup: event_month
+  examples: |
+    - January
+    - February 
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+
+- lookup: days_of_week
+  examples: |
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+
+- regex: event_time
+  examples: |
+    - \d{1,2}:\d{1,2}
+
+- regex: event_year
+  examples: |
+    - \d{4} 
